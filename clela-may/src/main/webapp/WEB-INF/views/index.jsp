@@ -7,10 +7,10 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title> Clela May Bouquet </title>
-	<link href="webjars/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
- 	<link href="style.css" rel="stylesheet">
-	<link href="evo-calendar.min.css" rel="stylesheet">
-	<link href="evo-calendar.orange-coral.min.css" rel="stylesheet"> 
+	<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="resources/style.css" rel="stylesheet">
+	<link href="resources/evo-calendar.min.css" rel="stylesheet">
+	<link href="resources/evo-calendar.orange-coral.min.css" rel="stylesheet"> 
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 		<div class="container-fluid">
 			<h1 class="text-center">Clela May Bouquet</h1>
 		</div>
-  		<img class="jumbotron-image" src="/images/jumbotronHeader.jpg"> 
+  		<img class="jumbotron-image" src="/src/images/jumbotronHeader.jpg"> 
 	</section>
 
 	<div class="topnav">
@@ -49,7 +49,7 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-	<script src="evo-calendar.min.js"></script>
+	<script src="resources/evo-calendar.min.js"></script>
 	<script>
 	$(document).ready(function() {
 	    $('#calendar').evoCalendar({
@@ -60,7 +60,7 @@
 	
 	
 	
-	<script src="webjars/jquery/3.6.0/jquery.min.js"></script>
-	<script src="webjars/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
