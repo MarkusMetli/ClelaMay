@@ -18,6 +18,11 @@ public class LoginController {
 		return "login";
 	}
 	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String index() {
+		return "login";
+	}
+	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String handleLoginRequest(@RequestParam String name, 
 			@RequestParam String password, ModelMap model) {

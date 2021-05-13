@@ -5,18 +5,16 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Harvest Calculator</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="webjars/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="resources/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
 
-	<section class="jumbotron">
-
-		<div class="container-fluid">
-			<h1 class="text-center">Clela May Bouquet</h1>
-		</div>
-  		<img class="jumbotron-image" src="/images/jumbotronHeader.jpg"> 
-	</section>
+	<div class="container">
+		<img src="resources/jumbotronHeader.jpg">
+		<div class="centered"> Clela May Bouquet </div>
+	</div>
 
 	<div class="topnav">
 		<a href="index" class="btn btn-info">Home</a>
@@ -26,10 +24,13 @@
   		<a href="logout" class="btn btn-info">Logout</a>
 	</div> <br> <br>
 
-	<div class="container border border-warning">
+	<div class="container" id="page-head">
 		<h2>Harvest Calculator</h2>
+	</div>
+	<div class="container border border-warning">
+		<br><br>
 		<p>Use this tool to estimate the quantity and date of your harvests so that you can plan ahead and know how many seeds you need to sow to meet with demands</p>
-	</div> <br>
+	</div> 
 
 	<form action="calc" method="post" class="container border border-warning">
 		<br>
@@ -44,8 +45,12 @@
 		<input type="text" id="number" name="number" placeholder="enter number of seeds"> <br> <br>
 		<input type="submit" class="btn btn-success" value="Calculate Harvest"> <br>
 		
+
+		<br>
+		<p>
+			<font color="black">${result}</font>
+		</p>
 		
-		<%= request.getAttribute("result") %>
 	
 	<br> <br>
 	</form>
@@ -54,6 +59,6 @@
 
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="webjars/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>

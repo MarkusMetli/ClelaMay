@@ -20,34 +20,33 @@ public class CalculatorController {
 		LocalDate currentDate = LocalDate.now();
 		String result = "Result: ";
 		
-		if (flowerName == "Sun Flower") {
+		if (flowerName.equals("Sun Flower")) {
 			LocalDate harvestDate = currentDate.plusDays(55);
 			int harvestSize = seedNumber;
-			result = "Result: Approximate harvest date" + harvestDate + "Approximate number of usable flowers" + harvestSize; 
-		} else if (flowerName == "Snapdragon") {
+			result = "Approximate harvest date: " + harvestDate + " " + "   Approximate number of usable flowers: " + harvestSize; 
+		} else if (flowerName.equals("Snapdragon")) {
 			LocalDate harvestDate = currentDate.plusDays(46);
 			int harvestSize = seedNumber * 10;
-			result = "Result: Approximate harvest date" + harvestDate + "Approximate number of usable flowers" + harvestSize;
-		} else if (flowerName == "Carnation") {
+			result = "Approximate harvest date: " + harvestDate + " " + "   Approximate number of usable flowers: " + harvestSize;
+		} else if (flowerName.equals("Carnation")) {
 			LocalDate harvestDate = currentDate.plusDays(35);
 			int harvestSize = seedNumber * 20;
-			result = "Result: Approximate harvest date" + harvestDate + "Approximate number of usable flowers" + harvestSize;
-		} else if (flowerName == "Zinnia") {
+			result = "Approximate harvest date: " + harvestDate + " " + "   Approximate number of usable flowers: " + harvestSize;
+		} else if (flowerName.equals("Zinnia")) {
 			LocalDate harvestDate = currentDate.plusDays(65);
 			int harvestSize = seedNumber * 10;
-			result = "Result: Approximate harvest date" + harvestDate + "Approximate number of usable flowers" + harvestSize;
-		} else if (flowerName == "Scabiosa") {
+			result = "Approximate harvest date: " + harvestDate + " " + "   Approximate number of usable flowers: " + harvestSize;
+		} else if (flowerName.equals("Scabiosa")) {
 			LocalDate harvestDate = currentDate.plusDays(95);
 			int harvestSize = seedNumber * 30;
-			result = "Result: Approximate harvest date" + harvestDate + "Approximate number of usable flowers" + harvestSize;
-		} else if (flowerName == "Verbena") {
+			result = "Approximate harvest date: " + harvestDate + " " + "   Approximate number of usable flowers: " + harvestSize;
+		} else if (flowerName.equals("Verbena")) {
 			LocalDate harvestDate = currentDate.plusDays(35);
 			int harvestSize = seedNumber * 15;
-			result = "Result: Approximate harvest date" + harvestDate + "Approximate number of usable flowers" + harvestSize;
+			result = "Approximate harvest date: " + harvestDate + " " + "   Approximate number of usable flowers: " + harvestSize;
+		} else {
+			result = "Invalid Entry";
 		}
-		
-		//result not updated through if statement
-		System.out.println(result);
 		
 		
 		ModelAndView mv = new ModelAndView();

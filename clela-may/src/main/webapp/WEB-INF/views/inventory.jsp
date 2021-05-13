@@ -5,18 +5,16 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Inventory</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="webjars/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="resources/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
 
-	<section class="jumbotron">
-
-		<div class="container-fluid">
-			<h1 class="text-center">Clela May Bouquet</h1>
-		</div>
-  		<img class="jumbotron-image" src="/images/jumbotronHeader.jpg"> 
-	</section>
+	<div class="container">
+		<img src="resources/jumbotronHeader.jpg">
+		<div class="centered"> Clela May Bouquet </div>
+	</div>
 
 	<div class="topnav">
 		<a href="index" class="btn btn-info">Home</a>
@@ -26,10 +24,12 @@
   		<a href="logout" class="btn btn-info">Logout</a>
 	</div> <br> <br>
 	
-	<div class="container border border-warning">
+	<div class="container" id="page-head">
 		<h2>Inventory</h2>
+	</div>
+	<div class="container border border-warning">
 		<p>Here you can keep track and add any bouquets that are made up and ready to sell into your inventory by simply changing the number in the table cell.</p>
-	</div> <br>
+	</div> 
 
 	<div class="container border border-warning">
 	<table class="table caption-top table-striped">
@@ -91,6 +91,6 @@
 	</script>
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="webjars/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>

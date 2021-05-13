@@ -1,19 +1,17 @@
 <html>
 <head>
 <title>Clela May Bouquet</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="webjars/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="resources/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid">
 
-		<section class="jumbotron">
-
-			<div class="container-fluid">
-				<h1 class="text-center">Clela May Bouquet</h1>
-			</div>
-			<img class="jumbotron-image" src="/images/jumbotronHeader.jpg">
-		</section>
-
+		<div class="container">
+		<img src="resources/jumbotronHeader.jpg">
+		<div class="centered"> Clela May Bouquet </div>
+	</div> <br><br>
+	
 		<div class="container-sm border border-warning">
 			<h2>Please Sign In</h2>
 			<br>
@@ -30,6 +28,6 @@
 	</div>
 
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="webjars/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
